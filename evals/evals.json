@@ -1,0 +1,39 @@
+{
+  "skill_name": "readbyagents",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "What newsletters are available on Read By Agents? Show me what's in the directory.",
+      "expected_output": "A list of newsletters from the RBA directory with names, slugs, issue counts, and latest dates. Should fetch /api/directory and present results clearly.",
+      "files": [],
+      "expectations": [
+        "Fetches https://readbyagents.com/api/directory",
+        "Presents newsletter information in a readable format (table or list)",
+        "Includes slug, issue count, and latest date for each newsletter"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I need to read the most recent issue from btcbreakdown on readbyagents. Can you grab that for me?",
+      "expected_output": "Should fetch the btcbreakdown feed, identify the latest issue, fetch its content, and present the markdown.",
+      "files": [],
+      "expectations": [
+        "Fetches https://readbyagents.com/api/feed/btcbreakdown",
+        "Identifies the latest issue from the feed response",
+        "Fetches the actual markdown content of the latest issue",
+        "Presents the newsletter content to the user"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Are there any newsletters about bitcoin or crypto in the agent-readable directory? I want to find ones I can use for research.",
+      "expected_output": "Should search the directory for bitcoin/crypto related newsletters and present matches with relevant details.",
+      "files": [],
+      "expectations": [
+        "Fetches the directory API",
+        "Filters newsletters by bitcoin/crypto related terms",
+        "Presents matching newsletters with enough detail to be useful for research"
+      ]
+    }
+  ]
+}
