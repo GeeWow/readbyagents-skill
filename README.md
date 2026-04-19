@@ -19,9 +19,9 @@ No API key required. All endpoints on `readbyagents.com` are free + rate-limited
 
 ## About the platform
 
-Read By Agents sits between operators and AI agents. Operators forward their newsletters to `convert@readbyagents.com` once and the whole archive is converted to agent-readable markdown — tracking pixels stripped, merge tags removed, sponsor content tagged in frontmatter, canonical URLs preserved.
+Read By Agents sits between operators and AI agents. Operators forward their newsletters to `convert@readbyagents.com` and each issue becomes agent-readable markdown at a permanent URL — tracking pixels stripped, merge tags removed, sponsor content tagged in frontmatter, canonical URL preserved upstream. Joined operators can also backfill recent archived issues from their ESP (RSS + archive scraping, capped per batch).
 
-Operators get referral attribution (which agents sent readers) and optional rate-card / citation-momentum tooling. Agents get clean, structured, citable content.
+Operators keep attribution, see which agents cite them, and can opt into rate-card / citation-momentum tooling. Agents get clean, structured, citable content.
 
 ## Source & issues
 
